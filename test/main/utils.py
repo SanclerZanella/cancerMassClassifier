@@ -1,11 +1,6 @@
-# Cancer Mass Classifier ML Project
-***
-## Tables of Contents
-***
-## Project Setup
-***
-## Data Set Characteristics
-```
+
+
+DATASET_DESCRIPTION = """
 .. _breast_cancer_dataset:
 
 Breast cancer wisconsin (diagnostic) dataset
@@ -128,9 +123,22 @@ cd math-prog/cpo-dataset/machine-learn/WDBC/
   163-171.
 
 |details-end|
+""".strip()
+
+README_TEST = """
+# Test README
+***
+## Tables of Contents
+***
+## Project Setup
+***
+## Data Set Characteristics
+```
+TEST DATA SET CHARACTERISTICS
 ```
 ***
 ## Technologies Used
 ***
 ## Testing
 ***
+""".strip()
