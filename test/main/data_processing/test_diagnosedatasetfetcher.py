@@ -5,15 +5,11 @@ from test.main.utils import DATASET_DESCRIPTION
 
 
 class DiagnoseDatasetFetcherTestCase(unittest.TestCase):
-    @classmethod
-    def setUpClass(cls):
-        # This runs once before all tests
-        cls.target_class = DiagnoseDatasetFetcher()
+    def setUp(self) -> None:
+        self.target_class = DiagnoseDatasetFetcher()
 
-    @classmethod
-    def tearDownClass(cls):
-        # This runs once after all tests
-        del cls.target_class
+    def tearDown(self) -> None:
+        del self.target_class
 
     def test_dataset_type(self):
         # Check dataset type

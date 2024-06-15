@@ -26,7 +26,8 @@ class ProcessDataset:
             X_train, X_test: These variables represents the features to be trained and tested.
             Y_train, Y_test: These variables represents the dataset labels.
         """
-        X_train, X_test, Y_train, Y_test = train_test_split(self.data,
-                                                            self.target,
-                                                            random_state=0)
+        (X_train, X_test,
+         Y_train, Y_test) = train_test_split(self.data,
+                                                self.target,
+                                                random_state=0)
         return X_train, X_test, Y_train, Y_test
