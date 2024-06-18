@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 from main.data_processing.data_processor import ProcessDataset
 
 
-class DiagnoseDatasetFetcherTestCase(unittest.TestCase):
+class ProcessDatasetTestCase(unittest.TestCase):
     def setUp(self) -> None:
         self.mock_dataset = Mock()
         self.target_class = ProcessDataset

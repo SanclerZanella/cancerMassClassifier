@@ -1,13 +1,10 @@
 import unittest
 from unittest.mock import Mock
-
 from numpy import ndarray
-from sklearn.metrics import precision_score
-
-from main.data_processing.data_classifier_model import DataClassifier
+from main.data_processing.models.data_classifier_SVM_model import DataClassifier
 
 
-class DiagnoseDatasetFetcherTestCase(unittest.TestCase):
+class DataClassifierTestCase(unittest.TestCase):
     def setUp(self) -> None:
         self.mock_dataset = Mock()
 
